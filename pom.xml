@@ -7,47 +7,17 @@
     <artifactId>hystrix-dashboard</artifactId>
     <packaging>jar</packaging>
     <version>0.1.0-SNAPSHOT</version>
-
+    <name>discovery-microservice</name>
+    
     <parent>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Brixton.BUILD-SNAPSHOT</version>
-        <relativePath/>
-        <!-- lookup parent from repository -->
+        <groupId>dk.xena</groupId>
+        <artifactId>xena-cloud-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-        <docker.plugin.version>0.3.258</docker.plugin.version>
-        <docker.image.prefix>xenabiz</docker.image.prefix>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>${docker.plugin.version}</version>
-                <configuration>
-                    <serverId>docker-hub</serverId>
-                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
-                    <resources>
-                        <resource>
-                            <targetPath>/</targetPath>
-                            <directory>${project.build.directory}</directory>
-                            <include>${project.build.finalName}.jar</include>
-                        </resource>
-                    </resources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
         <dependency>

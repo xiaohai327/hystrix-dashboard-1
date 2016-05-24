@@ -15,6 +15,22 @@
         <version>1.0.9</version>
     </parent>
     
+    <developers>
+        <developer>
+            <name>Michael Krog</name>
+            <organization>xenabiz</organization>
+            <organizationUrl>http://xena.biz</organizationUrl>
+            <url>https://github.com/michaelkrog</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/xenabiz/hystrix-microservice.git</connection>
+        <developerConnection>scm:git:xenaci@github.com:xenabiz/hystrix-microservice.git</developerConnection>
+        <url>https://github.com/xenabiz/hystrix-microservice</url>
+        <tag>HEAD</tag>
+    </scm>
+        
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

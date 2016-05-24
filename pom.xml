@@ -25,9 +25,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/xenabiz/hystrix-microservice.git</connection>
-        <developerConnection>scm:git:xenaci@github.com:xenabiz/hystrix-microservice.git</developerConnection>
-        <url>https://github.com/xenabiz/hystrix-microservice</url>
+        <connection>scm:git:https://github.com/xenabiz/hystrix-dashboard.git</connection>
+        <developerConnection>scm:git:xenaci@github.com:xenabiz/hystrix-dashboard.git</developerConnection>
+        <url>https://github.com/xenabiz/hystrix-dashboard</url>
         <tag>HEAD</tag>
     </scm>
         
